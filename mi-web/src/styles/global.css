@@ -1,0 +1,107 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+
+    --green: #247003;
+}
+
+.btn {
+    @apply bg-purple-500 text-white font-bold rounded border-purple-700 py-2 px-4 border-b-4;
+}
+
+
+.container-repositories {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+}
+
+.container-repositories .box-repositories {
+    position: relative;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 2px solid #000;*/
+    transition:all .5s ease-in-out;
+}
+/*
+.container-repositories .box-repositories:hover {
+    border: 2px solid var(--green);
+}
+
+/*
+.container-repositories .box-repositories:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #56CCF2; 
+background: -webkit-linear-gradient(to left, #2F80ED, #56CCF2);  
+background: linear-gradient(to left, #2F80ED, #56CCF2);
+
+    z-index: -1;
+    transition: 0.5s;
+}
+
+
+.container-repositories .box-repositories:hover::before {
+    transform: skew(2deg,2deg);
+}
+*/
+
+.box-repositories .content-repositories {
+    position: relative;
+    overflow: hidden;
+}
+
+.box-repositories .content-repositories h4 {
+    position: relative;
+    top: 20px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2em;
+    /*color: rgba(255, 255, 255, .05);*/
+    transition: 0.5s;
+    color:var(--green);
+}
+
+.box-repositories:hover .content-repositories h4 {
+    top: 0px;
+}
+
+.box-repositories .content-repositories p  {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 0px 20px;
+    text-decoration: none;
+    display: inline-block;
+
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box-repositories:hover .content-repositories p {
+    transform:translateY(-20px);
+    opacity: 1;
+    visibility: visible;
+}
+
+/*
+.link-repositories {
+    margin:20px 0 20px 0;
+}
+*/
