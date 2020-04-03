@@ -1,9 +1,13 @@
 import React, {useEffect, useState} from "react";
-//import repos from '../data/repos';
+import repos from '../data/repos';
 import Repo from './repo';
+
+import githubImg from '../imgs/github.png';
 
 export default () => {
 
+    //TODO ESTO ES PARA LLAMAR A GITHUB Y TRAER LOS REPOSITORIOS
+    /*
     const [repos, setRepos]=useState([]);
     const [reposCount, setReposCount]=useState([]);
 
@@ -45,11 +49,11 @@ export default () => {
 
         fetchRepos();
     }, []);
-
+    */
     return(
     <div className="max-w-4xl mx-auto mt-12 text-center">
             <header className="text-center">
-                <h2 className="text-3xl mb-2 font-bold"> Mi trabajo en Github</h2>
+                <h2 className="text-3xl mb-5 font-bold text-white header-repositories">Mis Proyectos en  <img src={githubImg} title="GitHub" className="img-language-header"></img></h2>
             </header>
             <ul className="container-repositories">
                 {
@@ -58,9 +62,9 @@ export default () => {
                     })
                 }
             </ul>
-            <div className="mt-8 text-center">
-                <a href="https://github.com/raimonkoudsi" className="btn" target="_blank" rel="noopener noreferrer">
-                    Ver más en Github ({reposCount})
+            <div class="button" align="center">
+                <a class="button_b" href="https://github.com/raimonkoudsi" target="_blank" rel="nofollow noopener">
+                    Ver más en Github
                 </a>
             </div>
     </div>

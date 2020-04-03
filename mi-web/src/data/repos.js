@@ -91,7 +91,17 @@ export default [
       "forks": 0,
       "open_issues": 0,
       "watchers": 0,
-      "default_branch": "master"
+      "default_branch": "master",
+      
+      "python": false,
+      "html": true,
+      "css": true,
+      "js": true,
+      "bootstrap":false,
+      "node":false,
+      "react":false,
+      "unity": false,
+      "csharp":false
     },
     {
       "id": 242911493,
@@ -185,7 +195,17 @@ export default [
       "forks": 0,
       "open_issues": 0,
       "watchers": 0,
-      "default_branch": "master"
+      "default_branch": "master",
+
+      "python": false,
+      "html": false,
+      "css": false,
+      "js": false,
+      "bootstrap":true,
+      "node":true,
+      "react":true,
+      "unity": false,
+      "csharp":false
     },
     {
       "id": 239402555,
@@ -279,7 +299,17 @@ export default [
       "forks": 0,
       "open_issues": 1,
       "watchers": 0,
-      "default_branch": "master"
+      "default_branch": "master",
+
+      "python": false,
+      "html": true,
+      "css": true,
+      "js": true,
+      "bootstrap":false,
+      "node":true,
+      "react":false,
+      "unity": false,
+      "csharp":false
     },
     {
       "id": 238845537,
@@ -473,6 +503,16 @@ export default [
       "forks": 0,
       "open_issues": 0,
       "watchers": 0,
-      "default_branch": "master"
+      "default_branch": "master",
+
+      "python": false,
+      "html": false,
+      "css": false,
+      "js": false,
+      "bootstrap":false,
+      "node":false,
+      "react":false,
+      "csharp":true,
+      "unity": true
     }
   ]
