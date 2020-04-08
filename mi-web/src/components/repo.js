@@ -17,47 +17,47 @@ const Repo = (props) => {
     let bootstrap, css, html, js, node, python, react, unity, csharp;
     let exist=false;
     
-    if(props.repo.html==true)
+    if(props.repo.html===true)
     {
         html = <img src={htmlImg} alt="html" title="HTML 5" className="img-language"></img>;
         exist=true;
     }
-    if(props.repo.bootstrap==true)
+    if(props.repo.bootstrap===true)
     {
         bootstrap = <img src={bootstrapImg} alt="bootstrap" title="Bootstrap" className="img-language"></img>;
         exist=true;
     }
-    if(props.repo.css==true)
+    if(props.repo.css===true)
     {
         css = <img src={cssImg} alt="css" title="CSS 3"className="img-language"></img>;
         exist=true;
     }
-    if(props.repo.js==true)
+    if(props.repo.js===true)
     {
         js = <img src={jsImg} alt="js" title="JavaScript" className="img-language"></img>;
         exist=true;
     }
-    if(props.repo.node==true)
+    if(props.repo.node===true)
     {
         node = <img src={nodeImg} alt="node" title="Node JS" className="img-language"></img>;
         exist=true;
     }
-    if(props.repo.react==true)
+    if(props.repo.react===true)
     {
         react = <img src={reactImg} alt="react" title="React JS" className="img-language"></img>;
         exist=true;
     }
-    if(props.repo.python==true)
+    if(props.repo.python===true)
     {
         python = <img src={pythonImg} alt="python" title="Python" className="img-language"></img>;
         exist=true;
     }
-    if(props.repo.unity==true)
+    if(props.repo.unity===true)
     {
         unity = <img src={unityImg} alt="unity" title="Unity" className="img-language"></img>;
         exist=true;
     }
-    if(props.repo.csharp==true)
+    if(props.repo.csharp===true)
     {
         csharp = <img src={csharpImg} alt="csharp" title="C#" className="img-language"></img>;
         exist=true;    

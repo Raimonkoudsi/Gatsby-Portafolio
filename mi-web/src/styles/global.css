@@ -10,6 +10,13 @@
     --body: #221F20;
     --green: #247003;
     --blue: #298ce3;
+
+    --twitter: #298ce3;
+    --linkedin: #298ce3;
+    --github: #298ce3;
+    --gmail: #298ce3;
+    --codepen: #298ce3;
+    --telegram: #298ce3;
 }
 
 body {
@@ -22,6 +29,7 @@ body {
     text-align: center;
     font-size: 100px;
     cursor: default;
+
 }
 
 .title-header h1 span {
@@ -30,20 +38,6 @@ body {
 
 .title-header h1 span:hover {
     color: var(--blue);
-}
-
-.header-languages {
-    position: relative;
-    padding: 0px 20px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.header-social {
-    position: relative;
-    padding: 5px 20px;
-    text-decoration: none;
-    display: inline-block;
 }
 
 .img-header {
@@ -61,28 +55,214 @@ body {
     color: var(--blue);
     font-style: italic;
     text-align: center;
-    opacity: 0.8;
     cursor: default;
+}
+
+.header-social {
+    text-align: center;
+    font-family: 'Acme', cursive;
+    color: var(--blue);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-style: italic;
+    font-size: 20px;
 }
 
 
 .header {
     background-color: #000;
+    padding: 0px;
+    margin:0px;
 }
 
-.svg-social {
+.header-languages {
+    position: relative;
+    padding: 0px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
 
-    -webkit-mask: url(../imgs/social/twitter.svg) no-repeat 100% 100%;
-    background: white;
-    height: 50px;
+
+
+
+
+
+
+
+
+
+/* REDES SOCIALES DEL HEADER */
+
+.container {
+    text-align: center;
+}
+
+.header-social {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.social-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-container .social-card {
+    position: relative;
+    margin: 5px;
+}
+
+.social-container .social-card .social-face {
+   transition: 0.5s; 
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   text-align: left;
+   left: 2px;
+}
+
+.social-content {
+    position: relative;
+    display: inline-block;
+    font-family: 'Acme', cursive;
+    text-align: left;
+    width: 100%;
+}
+
+.header-social .social-content p {
+    text-decoration: none;
+    display: inline;
+    top:-6px;
+    cursor: pointer;
     transition: 0.5s;
+    margin-top:10px;
+    margin-left: 4px;
+    margin-right: 2px;
+    visibility: hidden;
+    opacity:0;
+    position: absolute;
+    text-align: center;
 }
 
-.svg-social:hover {
-    background: #1DA1F2;
+.button_a:hover .social-content p {
+    visibility: visible;
+    opacity: 1;
 }
 
+.header-social .social-content .svg-social-twitter {
+    -webkit-mask: url(../imgs/social/twitter.svg) no-repeat 100% 100%;
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    transition: 0.5s;
+    display: inline-block;
+    margin-top: 6px;
+    
+}
 
+.header-social .button_a:hover .social-content .txt-social-twitter {
+    color: var(--twitter);
+}
+
+.header-social  .button_a:hover .social-content .svg-social-twitter {
+    background: var(--twitter);
+}
+
+.header-social .social-content .svg-social-linkedin {
+    -webkit-mask: url(../imgs/social/linkedin.svg) no-repeat 100% 100%;
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    transition: 0.5s;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.header-social .button_a:hover .social-content .txt-social-linkedin {
+    color: var(--linkedin);
+}
+
+.header-social .button_a:hover  .social-content .svg-social-linkedin {
+    background: var(--linkedin);
+}
+
+.header-social .social-content .svg-social-github {
+    -webkit-mask: url(../imgs/social/github.svg) no-repeat 100% 100%;
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    transition: 0.5s;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.header-social .button_a:hover .social-content .txt-social-github {
+    color: var(--github);
+}
+
+.header-social .button_a:hover  .social-content .svg-social-github {
+    background: var(--github);
+}
+
+.header-social .social-content .svg-social-gmail {
+    -webkit-mask: url(../imgs/social/gmail.svg) no-repeat 100% 100%;
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    transition: 0.5s;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.header-social .button_a:hover .social-content .txt-social-gmail {
+    color: var(--gmail);
+}
+
+.header-social .button_a:hover  .social-content .svg-social-gmail {
+    background: var(--gmail);
+}
+
+.header-social .social-content .svg-social-codepen {
+    -webkit-mask: url(../imgs/social/code.svg) no-repeat 100% 100%;
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    transition: 0.5s;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.header-social .button_a:hover .social-content .txt-social-codepen {
+    color: var(--codepen);
+}
+
+.header-social .button_a:hover  .social-content .svg-social-codepen {
+    background: var(--codepen);
+}
+
+.header-social .social-content .svg-social-telegram {
+    -webkit-mask: url(../imgs/social/telegram.svg) no-repeat 100% 100%;
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    transition: 0.5s;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.header-social .button_a:hover .social-content .txt-social-telegram {
+    color: var(--telegram);
+}
+
+.header-social .button_a:hover  .social-content .svg-social-telegram {
+    background: var(--telegram);
+}
 
 
 
@@ -231,14 +411,14 @@ body {
 /* BOTON */
 
 .button_b {
-    color: #3E77BF;
+    color:#fff ;
     text-decoration: none;
     /*background-color: #3E77BF;*/
     padding: 20px;
     border-radius: 50px;
     display: inline-block;
     border-width: 2px;
-    border-color: #3E77BF;
+    border-color: #fff;
     transition: all 0.4s ease 0s;
     margin-top: 20px;
     font-family: 'Lobster', cursive;
@@ -249,6 +429,78 @@ body {
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     transition: all 0.4s ease 0s;
-    box-shadow: 0 0px 6px 0 #fff, 0 0px 6px 0 #fff;
-    color:#fff;
+    color:var(--blue);
+}
+
+.button_a {
+    text-decoration: none;
+    /*background-color: #3E77BF;*/
+    padding-right:7px;
+    padding-left: 7px;
+    padding-top: 2px;
+    border-radius: 50px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: #fff;
+    transition: all 0.4s ease 0s;
+    font-family: 'Lobster', cursive;
+    width: 45px;
+    margin-bottom: 5px;
+}
+
+.button_a:hover {
+    /*text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);*/
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    width: 180px;
+    border-color: var(--blue);
+    /*box-shadow: 0 0px 6px 0 #3E77BF, 0 0px 6px 0 #3E77BF;*/
+}
+
+/* CAMBIAR EL ANCHO DE LOS QUE SON MAS GRANDES */
+.btn-twitter.button_a:hover {
+    width: 185px;
+}
+
+.btn-linkedin.button_a:hover {
+    width: 170px;
+}
+
+.btn-github.button_a:hover {
+    width: 170px;
+}
+
+.btn-gmail.button_a:hover {
+    width: 260px;
+}
+
+.btn-codepen.button_a:hover {
+    width: 185px;
+}
+
+.btn-telegram.button_a:hover {
+    width: 150px;
+}
+
+.btn-twitter:hover {
+    border-color: var(--twitter);
+}
+
+.btn-linkedin:hover {
+    border-color: var(--linkedin);
+}
+
+.btn-github:hover {
+    border-color: var(--github);
+}
+
+.btn-gmail:hover {
+    border-color: var(--gmail);
+}
+.btn-codepen:hover {
+    border-color: var(--codepen);
+}
+.btn-telegram:hover {
+    border-color: var(--telegram);
 }
