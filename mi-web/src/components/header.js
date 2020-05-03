@@ -21,6 +21,7 @@ export default () => (
     <header className="header">
         <div className="container mx-auto p-12 max-w-4xl">
             <div className="title-header">
+                <br></br>
                 <h1>
                     <span>R</span>
                     <span>a</span>
